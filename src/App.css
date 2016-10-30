@@ -1,0 +1,48 @@
+.hidden {
+    display: none;
+}
+
+.box {
+    background-color: #eee;
+    padding: 1rem 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.label {
+    color: #333;
+    padding-right: 1rem;
+}
+.input {
+    padding: .2rem .5rem;
+    height: 1.1rem;
+    color: #333;
+    margin-right: 0.6rem;
+}
+.button {
+    background-color: #48a3ea;
+    border: none;
+    color: #fff;
+    padding: .4rem 1rem;
+    font-weight: bold;
+    border-radius: .2rem;
+}
+
+.card {
+    border: 2px solid #ccc;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.address {
+    line-height: 0.6;
+}
+.address_bairro {
+    line-height: 1;
+}
+
+.card_icon {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    cursor: pointer;
+}

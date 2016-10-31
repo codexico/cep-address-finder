@@ -1,6 +1,7 @@
 {
   "name": "cep-address-finder",
   "version": "1.0.0",
+  "homepage": "https://codexico.github.io/cep-address-finder",
   "private": true,
   "devDependencies": {
     "babel-eslint": "^6.1.2",
@@ -23,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

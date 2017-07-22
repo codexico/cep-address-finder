@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GMap from '../../components/GMap/GMap';
+import GMapContainer from '../../components/GMap/GMapContainer';
 import Address from '../../components/Address/Address';
 import Box from '../../components/Box/Box';
 import CepForm from '../../components/CepForm/CepForm';
@@ -70,7 +70,7 @@ class CepAddressFinder extends Component {
                     handleCloseCard={this.handleCloseCard}
                     >
                     <Address address={this.state.address} />
-                    <GMap cep={this.state.cep} elementId="map" />
+                    <GMapContainer cep={this.state.cep} elementId="map" />
                 </Card>
             </div>
         );

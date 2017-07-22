@@ -9,7 +9,7 @@ it('renders without crashing', () => {
 });
 
 it('input text empty', () => {
-  const gmap = shallow(<GMap elementId='foo' />);
+  const gmap = shallow(<GMap gmapId='foo' />);
 
   expect(gmap.is('#foo')).toEqual(true);
 });

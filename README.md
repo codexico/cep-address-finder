@@ -2,10 +2,12 @@ Simple test project to consume a CEP service, show the adress, and show a map.
 
 https://codexico.github.io/cep-address-finder/
 
+## Install
+
+### `npm install`
+
 
 ## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 

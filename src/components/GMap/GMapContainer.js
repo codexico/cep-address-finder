@@ -89,13 +89,16 @@ class GMapContainer extends Component {
         };
     }
 
-    render() {
+    componentDidMount = () => {
         buildMap(this.gmap, this.gmap.elementId, this.props.cep)
         .then((m) => {
             this.gmap.map = m.map;
             this.gmap.marker = m.marker;
             this.gmap.currentCep = m.currentCep;
         });
+    }
+
+    render() {
         return (
             <GMap
                 gmapId={this.gmap.elementId}

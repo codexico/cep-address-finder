@@ -15,7 +15,7 @@ class Card extends Component {
 
     render() {
         return (
-            <div className={`card ${this.props.showCard ? "" : "hidden"}`}>
+            <div className={`card`}>
                 {this.props.children}
                 <Icon
                     type="icon-close card_icon"

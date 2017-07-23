@@ -65,13 +65,15 @@ class CepAddressFinder extends Component {
                         onSubmit={this.handleSubmit}
                         />
                 </Box>
-                <Card
-                    showCard={this.state.showCard}
-                    handleCloseCard={this.handleCloseCard}
-                    >
-                    <Address address={this.state.address} />
-                    <GMapContainer cep={this.state.cep} elementId="map" />
-                </Card>
+                {this.state.showCard &&
+                    <Card
+                        showCard={this.state.showCard}
+                        handleCloseCard={this.handleCloseCard}
+                        >
+                        <Address address={this.state.address} />
+                        <GMapContainer cep={this.state.cep} elementId="map" />
+                    </Card>
+                }
             </div>
         );
     }

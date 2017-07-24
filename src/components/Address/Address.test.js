@@ -18,8 +18,7 @@ describe('Address', () => {
     });
 
     it('show address', () => {
-        const wrapper = mount((<CepAddressFinder />));
-        wrapper.setState({ showCard: true, address: data.address });
+        const wrapper = mount((<Address address={data.address} />));
         expect(wrapper.find('.address_cep').text()).toEqual(data.address.cep);
         expect(wrapper.find('.address_localidade').text())
             .toEqual(`${data.address.localidade} - ${data.address.uf}`);

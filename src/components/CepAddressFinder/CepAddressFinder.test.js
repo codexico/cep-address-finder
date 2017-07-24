@@ -17,28 +17,28 @@ describe('CepAddressFinder', () => {
       expect(wrapper.contains(welcome)).toEqual(true);
     });
 
-    it('show card', () => {
-        const wrapper = mount((<CepAddressFinder />));
-        expect(wrapper.find('.card').length).toEqual(0);
-        wrapper.setState({ showCard: true });
-        expect(wrapper.find('.card').length).toEqual(1);
-    });
+    // it('show card', () => {
+    //     const wrapper = mount((<CepAddressFinder />));
+    //     expect(wrapper.find('.card').length).toEqual(0);
+    //     wrapper.setState({ showCard: true });
+    //     expect(wrapper.find('.card').length).toEqual(1);
+    // });
 
-    it('hide card', () => {
-        const wrapper = mount((<CepAddressFinder />));
-        expect(wrapper.find('.card').length).toEqual(0);
+    // it('hide card', () => {
+    //     const wrapper = mount((<CepAddressFinder />));
+    //     expect(wrapper.find('.card').length).toEqual(0);
+    //
+    //     wrapper.setState({ showCard: true });
+    //     expect(wrapper.find('.card').length).toEqual(1);
+    //
+    //     wrapper.find('.icon-close').simulate('click');
+    //     expect(wrapper.find('.card').length).toEqual(0);
+    // });
 
-        wrapper.setState({ showCard: true });
-        expect(wrapper.find('.card').length).toEqual(1);
-
-        wrapper.find('.icon-close').simulate('click');
-        expect(wrapper.find('.card').length).toEqual(0);
-    });
-
-    it('show address', () => {
-        const wrapper = mount((<CepAddressFinder />));
-        wrapper.setState({ showCard: true, address: data.address });
-        expect(wrapper.find('.address_cep').text()).toEqual(data.address.cep);
-    });
+    // it('show address', () => {
+    //     const wrapper = mount((<CepAddressFinder />));
+    //     wrapper.setState({ showCard: true, address: data.address });
+    //     expect(wrapper.find('.address_cep').text()).toEqual(data.address.cep);
+    // });
 
 });
